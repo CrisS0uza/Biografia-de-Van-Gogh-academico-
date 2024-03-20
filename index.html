@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container{
+            display: grid;
+        }
+
+        header{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FFC222;
+        }
+
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center; /*centraliza o menu*/
+            gap: 20px;
+        }
+
+        .imagem_van{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FFC222;
+            color: white;
+            text-align: center;
+        }
+
+        ul{
+            list-style-type: none;
+            color: bisque;
+        }
+
+        a,
+        a:link{
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid bisque 1px;
+            color:indianred;
+
+        }
+
+        li{
+            float: left;
+            
+        }
+
+        a:hover{
+            background-color: #FFC222;
+            color: white;
+        }
+
+        .wrapper{
+            position: relative;
+            left: 15px;
+        }
+
+
+        /* media query para dispositivos móveis*/
+        @media only screen and(max-width: 767px){
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_van{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Vincent Van Gogh </h1>
+        <br>
+
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_van">
+            <img src="images.jpg">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Pintor neerlandês</p>
+                <p>
+                    <strong>Data de nacimento:</strong>
+                    30 de março de 1853
+                </p>
+                <p><strong>Data da falecimento:</strong> 29 de julho de 1890</p>
+                <br><br><br>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Vincent Van Gogh
+            </h1>
+<p>Vincent van Gogh foi um pintor pós-impressionista holandês, nascido em 30 de março de 1853, na aldeia de Groot-Zundert, na Holanda. Ele é conhecido por sua contribuição significativa para a arte moderna, embora tenha alcançado apenas reconhecimento póstumo por seu trabalho.</p>
+
+<p>Van Gogh começou a trabalhar como artista aos 27 anos, mas sua carreira foi marcada por lutas pessoais e desafios emocionais. Ele experimentou episódios de depressão e ansiedade, o que influenciou sua obra de maneira profunda. Apesar das dificuldades, ele produziu algumas das obras de arte mais reconhecidas e valiosas do mundo.</p>
+
+<p>Entre suas obras mais famosas estão "Noite Estrelada", "Os Girassóis" e "Quarto em Arles". Sua técnica distintiva e seu uso expressivo da cor e da forma continuam a inspirar artistas e admiradores de todo o mundo.</p>
+
+<p>Infelizmente, a vida de van Gogh foi marcada por tragédia e instabilidade. Ele lutou com problemas de saúde mental durante grande parte de sua vida adulta e, em 1890, aos 37 anos, ele faleceu de um ferimento de bala autoinfligido.</p>
+        </section>
+        <br><br>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+
+    </footer>
+</body>
+</html>

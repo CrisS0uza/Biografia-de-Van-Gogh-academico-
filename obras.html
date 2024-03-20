@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            display: grid;
+        }
+
+
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center; /*centraliza o menu*/
+            gap: 20px;
+        }
+
+        .imagem_van{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+
+
+        .card{
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        ul{
+            list-style-type: none;
+            color: bisque;
+        }
+
+        a,
+        a:link{
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid bisque 1px;
+            color:indianred;
+
+        }
+
+        li{
+            float: left;
+            
+        }
+
+        a:hover{
+            background-color: #FFC222;
+            color: white;
+        }
+
+        .img{
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img{
+            width: 125px;
+            height: 115px;
+        }
+
+        .wrapper{
+            position: relative;
+            left: 15px;
+    
+    
+        }
+
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+
+            /*.container{
+                max-width: 1200px;
+                margin: 0 auto;
+            }*/
+            .img{
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        section.principal {
+            top: -28em;
+            position: relative;
+            left: 18em;
+        }
+
+        /* media query para dispositivos móveis*/
+        @media only screen and (max-width: 767px){
+            .wrapper{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_van{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+            .principal{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .card{
+            display: flex;
+            flex-flow: column wrap;
+
+        }
+        }
+
+            .principal{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_van">
+            <img src="images.jpg">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> <br>
+                    Pintor neerlandês</p>
+                <p>
+                    <strong>Data de nacimento:</strong> <br>
+                    30 de março de 1853
+                </p>
+                <p><strong>Data da falecimento:</strong><br>
+                     29 de julho de 1890</p>
+                <br><br><br>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Algumas obras
+            </h1>
+            <div class="card">
+                <div class="img">
+                    <img src="Vincent_Willem_van_Gogh_-_Cafe_Terrace_at_Night_(Yorck).jpg">
+
+                    <div class="">
+                        <h2>Terraço do café à noite</h2>
+                        <p>Museu Kröller-Müller</p>
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="Os-girassois.jpeg">
+
+                    <div class="">
+                        <h2>Os Girassóis</h2>
+                        <p>Museu de Londres</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="quarto em arles.jpg">
+                    <div class="">
+                        <h2>Quarto em Arles</h2>
+                        <p>Museu de Orsay</p>
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="noite-estrelada.jpg">
+                    <div class="">
+                        <h2>A Noite Estrelada</h2>
+                        <p>Museu de Arte Moderna (Nova Iorque)</p>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </div>
+
+</body>
+
+</html>

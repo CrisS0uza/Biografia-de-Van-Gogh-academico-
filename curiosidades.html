@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container{
+            display: grid;
+        }
+
+        header{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FFC222;
+        }
+
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center; /*centraliza o menu*/
+            gap: 20px;
+        }
+
+        .imagem_van{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #FFC222;
+            color: white;
+            text-align: center;
+        }
+
+        ul{
+            list-style-type: none;
+            color: bisque;
+        }
+
+        a,
+        a:link{
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid bisque 1px;
+            color:indianred;
+
+        }
+
+        li{
+            float: left;
+            
+        }
+
+        a:hover{
+            background-color: #FFC222;
+            color: white;
+        }
+
+        .wrapper{
+            position: relative;
+            left: 15px;
+        }
+        
+
+        #Vincent{
+            color: #FFC222;
+        }
+        
+        #Gogh{
+            color: blue;
+        }
+
+        /* media query para dispositivos móveis*/
+        @media only screen and(max-width: 767px){
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_van{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal{
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Vincent Van Gogh </h1>
+        <br>
+
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_van">
+            <img src="images.jpg">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Pintor neerlandês</p>
+                <p>
+                    <strong>Data de nacimento:</strong>
+                    30 de março de 1853
+                </p>
+                <p><strong>Data da falecimento:</strong> 29 de julho de 1890</p>
+                <br><br><br>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                <span id="Vincent">Vincent</span> Van <span id="Gogh">Gogh</span>
+            </h1>
+            <p>Vincent van Gogh era um artista pós-impressionista holandês conhecido por suas obras expressivas e emocionais.</p>
+
+            <p>Apesar de sua profunda influência na arte moderna, van Gogh só vendeu um quadro durante sua vida.</p>
+            
+            <p>Ele lutou com problemas mentais ao longo de sua vida e foi hospitalizado várias vezes, incluindo após cortar sua orelha direita durante um surto psicótico.</p>
+            
+            <p>Van Gogh produziu mais de 2.000 obras de arte em sua curta carreira, incluindo paisagens, naturezas-mortas e retratos.</p>
+            
+            <p>Ele tinha uma relação próxima com seu irmão Theo, que frequentemente o apoiava financeiramente e emocionalmente.</p>
+            
+            <p>Van Gogh era conhecido por sua paleta de cores vibrantes e uso ousado do pincel, criando texturas únicas em suas pinturas.</p>
+            
+            <p>Ele pintou muitas de suas obras-primas, como "Noite Estrelada" e "Girassóis", durante seu tempo em Arles, no sul da França.</p>
+            
+            <p>Apesar de sua vida conturbada, o legado de van Gogh perdura, com suas obras sendo reverenciadas e estudadas até os dias de hoje.</p>
+            
+        </section>
+        <br><br>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+
+    </footer>
+</body>
+</html>
